@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kona</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Kona | Web Developer</h1>
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#projek">Projek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    <button id="darkModeToggle">Dark Mode</button>
+</header>
+
+<main>
+    <section id="tentang" data-aos="fade-up">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang Web Developer fokus pada teknologi modern seperti HTML5, CSS3, JavaScript, dan blockchain development.</p>
+    </section>
+
+    <section id="projek" data-aos="fade-right">
+        <h2>Projek Saya</h2>
+        <div class="carousel">
+            <div class="slides">
+                <img src="assets/gambar-projek-1.jpg" alt="Projek 1">
+                <img src="assets/gambar-projek-2.jpg" alt="Projek 2">
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" data-aos="fade-up">
+        <h2>Kontak</h2>
+        <form id="formKontak">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <input type="email" id="email" placeholder="Email Anda" required>
+            <textarea id="pesan" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Kona. Dibuat dengan ❤️ menggunakan HTML, CSS, JS.</p>
+</footer>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
